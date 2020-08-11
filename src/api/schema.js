@@ -12,14 +12,12 @@ module.exports = makeExecutableSchema({
 
   }
 
-
   type Query {
       getUser(id: ID!): User 
       getUsers: [User]
   }
 
  input UserInput {
-  id: ID!
   name: String!
   email: String!
   password: String!
